@@ -28,6 +28,7 @@ ${renderLicenseBadge(response.license)}
 4. [Contributing ](#contributing)
 5. [Tests ](#testing)
 6. [Questions ](#questions)
+${renderLicenseTOC(response.license)}
 
 <a name="description"></a>
 ## Description
@@ -61,7 +62,9 @@ You can reach me at my [GitHub Profile](https://github.com/${response.github}/).
 
 If you have any additional questions, feel free to email me at ${response.email}
 
-${renderLicenseSection(response.license)}`;
+${renderLicenseSection(response.license)}
+
+${renderLicenseLink(response.license)}`;
         
 
 // TODO: Create a function to write README file
@@ -156,7 +159,18 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+    if((license === 'None') || (license === undefined)){
+        return ""
+      }
+      else if (license == 'MIT'){
+        return "The license of this application is under MIT. [Click here to learn more!](https://opensource.org/licenses/MIT)"
+      }
+      else if (license == 'Eclipse'){
+        return "The license of this application is under Eclipse. [Click here to learn more!](https://opensource.org/licenses/EPL-1.0)"
+      }
+      else if (license == 'Apache'){
+        return "The license of this application is under MIT. [Click here to learn more!](https://opensource.org/licenses/Apache-2.0)"
+      }
 }
 
 // TODO: Create a function that returns the license section of README
@@ -166,10 +180,18 @@ function renderLicenseSection(license) {
     return ""
   }
   else{
-    return "## License"
+    return "<a name=\"license\"></a>\n## License"
   }
 }
 
+function renderLicenseTOC(license) {
+    if((license === 'None') || (license === undefined)){
+      return ""
+    }
+    else{
+      return "7. [License ](#license)"
+    }
+  }
 
 
 // Function call to initialize app

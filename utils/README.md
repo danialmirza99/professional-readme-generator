@@ -10,6 +10,7 @@
 4. [Contributing ](#contributing)
 5. [Tests ](#testing)
 6. [Questions ](#questions)
+7. [License ](#license)
 
 <a name="description"></a>
 ## Description
@@ -19,28 +20,31 @@ asdfgh
 <a name="installation"></a>
 ## Installation
 
-asdfgh
+asdfg
 
 <a name="usage"></a>
 ## Usage
 
-asdfgh
+asdfg
 
 <a name="contributing"></a>
 ## Contributing
 
-asdfgh
+asdfg
 
 <a name="testing"></a>
 ## Tests
 
-asdfgh
+asdsfg
 
 <a name="questions"></a>
 ## Questions
 
-You can reach me at my [GitHub Profile](https://github.com/asdfgfhg/).
+You can reach me at my [GitHub Profile](https://github.com/sadf/).
 
-If you have any additional questions, feel free to email me at asdfdgfhgj
+If you have any additional questions, feel free to email me at sadf
 
+<a name="license"></a>
 ## License
+
+The license of this application is under MIT. [Click here to learn more!](https://opensource.org/licenses/Apache-2.0)
