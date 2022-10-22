@@ -1,6 +1,6 @@
-# Title: asdfg
+# Title: My Test Project
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
@@ -15,36 +15,36 @@
 <a name="description"></a>
 ## Description
 
-asdfgh
+This section will be the description of my project.
 
 <a name="installation"></a>
 ## Installation
 
-asdfg
+This is where I will explain the installation of my project
 
 <a name="usage"></a>
 ## Usage
 
-asdfg
+This is where I will write my usage manual.
 
 <a name="contributing"></a>
 ## Contributing
 
-asdfg
+This is my contribution guidline
 
 <a name="testing"></a>
 ## Tests
 
-asdsfg
+These are my testing instructions.
 
 <a name="questions"></a>
 ## Questions
 
-You can reach me at my [GitHub Profile](https://github.com/sadf/).
+You can reach me at my [GitHub Profile](https://github.com/danialmirza99/).
 
-If you have any additional questions, feel free to email me at sadf
+If you have any additional questions, feel free to email me at danialmirza99@gmail.com
 
 <a name="license"></a>
 ## License
 
-The license of this application is under MIT. [Click here to learn more!](https://opensource.org/licenses/Apache-2.0)
+The license of this application is under MIT. [Click here to learn more!](https://opensource.org/licenses/MIT)

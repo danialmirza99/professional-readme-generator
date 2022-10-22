@@ -130,8 +130,6 @@ function init() {
     .then((response) => {
       const readmeGen = writeReadme(response);
       writeToFile('./utils/README.md', readmeGen);
-      console.log(response.license);
-      console.log(renderLicenseSection(response.license))
     });
 }
 
