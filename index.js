@@ -18,6 +18,8 @@ const writeReadme = (response) =>
          
 `# Title: ${response.title}
 
+${renderLicenseBadge(response.license)}
+
 ## Table of Contents
 
 1. [ Description ](#description)
@@ -59,9 +61,7 @@ You can reach me at my [GitHub Profile](https://github.com/${response.github}/).
 
 If you have any additional questions, feel free to email me at ${response.email}
 
-${renderLicenseSection(response.license)}
-
-${renderLicenseBadge(response.license)}`;
+${renderLicenseSection(response.license)}`;
         
 
 // TODO: Create a function to write README file
@@ -144,6 +144,12 @@ function renderLicenseBadge(license) {
       }
       else if (license == 'MIT'){
         return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+      }
+      else if (license == 'Eclipse'){
+        return "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
+      }
+      else if (license == 'Apache'){
+        return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
       }
 }
 
