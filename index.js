@@ -10,7 +10,8 @@ const questions = [
     'Please enter contribution guidelines. ',
     'Please enter testing instructions. ',
     'Please enter your github username. ',
-    'Please enter your email address. '
+    'Please enter your email address. ',
+    'Please enter a license'
 ];
 
 const writeReadme = (response) =>
@@ -56,7 +57,9 @@ ${response.testing}
 
 You can reach me at my [GitHub Profile](https://github.com/${response.github}/).
 
-If you have any additional questions, feel free to email me at ${response.email}`;
+If you have any additional questions, feel free to email me at ${response.email}
+
+${renderLicenseSection(response.license)}`;
         
 
 // TODO: Create a function to write README file
@@ -112,12 +115,47 @@ function init() {
         name: 'email',
         message: questions[7],
       },
+      {
+        type: 'list',
+        name: 'license',
+        message: questions[8],
+        choices: ['MIT', 'Eclipse', 'Apache', 'None']
+      },
     ])
     .then((response) => {
       const readmeGen = writeReadme(response);
       writeToFile('./utils/README.md', readmeGen);
     });
 }
+
+
+/*
+Was having issues working with two files, so I moved the contents of generateMarkdown.js to this file
+*/
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+function renderLicenseBadge(license) {
+
+}
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+
+}
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+  if((license === "MIT") || (license === "Eclipse"), (license === "Apache")){
+    return "## License"
+  }
+  else{
+    return ""
+  }
+}
+
+
 
 // Function call to initialize app
 init();
