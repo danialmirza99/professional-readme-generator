@@ -59,7 +59,9 @@ You can reach me at my [GitHub Profile](https://github.com/${response.github}/).
 
 If you have any additional questions, feel free to email me at ${response.email}
 
-${renderLicenseSection(response.license)}`;
+${renderLicenseSection(response.license)}
+
+${renderLicenseBadge(response.license)}`;
         
 
 // TODO: Create a function to write README file
@@ -125,6 +127,8 @@ function init() {
     .then((response) => {
       const readmeGen = writeReadme(response);
       writeToFile('./utils/README.md', readmeGen);
+      console.log(response.license);
+      console.log(renderLicenseSection(response.license))
     });
 }
 
@@ -135,7 +139,12 @@ Was having issues working with two files, so I moved the contents of generateMar
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-
+    if((license === 'None') || (license === undefined)){
+        return ""
+      }
+      else if (license == 'MIT'){
+        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+      }
 }
 
 // TODO: Create a function that returns the license link
@@ -147,11 +156,11 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if((license === "MIT") || (license === "Eclipse"), (license === "Apache")){
-    return "## License"
+  if((license === 'None') || (license === undefined)){
+    return ""
   }
   else{
-    return ""
+    return "## License"
   }
 }
 
