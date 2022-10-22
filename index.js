@@ -17,6 +17,16 @@ const writeReadme = (response) =>
          
 `# Title: ${response.title}
 
+## Table of Contents
+---------------------
+
+    * [Description](#description)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Contributing](#contributing)
+    * [Tests](#testing)
+    * [Questions](#questions)
+
 ## Description
 
 ${response.description}
