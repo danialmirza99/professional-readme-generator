@@ -20,12 +20,12 @@ const writeReadme = (response) =>
 ## Table of Contents
 ---------------------
 
-    * [Description](#description)
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributing](#contributing)
-    * [Tests](#testing)
-    * [Questions](#questions)
+    * [ Description ](#description)
+    * [Installation ](#installation)
+    * [Usage ](#usage)
+    * [Contributing ](#contributing)
+    * [Tests ](#testing)
+    * [Questions ](#questions)
 
 <a name="description"></a>
 ## Description
