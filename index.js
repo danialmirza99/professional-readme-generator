@@ -27,26 +27,32 @@ const writeReadme = (response) =>
     * [Tests](#testing)
     * [Questions](#questions)
 
+<a name="description"></a>
 ## Description
 
 ${response.description}
 
+<a name="installation"></a>
 ## Installation
 
 ${response.installation}
 
+<a name="usage"></a>
 ## Usage
 
 ${response.usage}
 
+<a name="contributing"></a>
 ## Contributing
 
 ${response.contributing}
 
+<a name="testing"></a>
 ## Tests
 
 ${response.testing}
 
+<a name="questions"></a>
 ## Questions
 
 You can reach me at my [GitHub Profile](https://github.com/${response.github}/).
