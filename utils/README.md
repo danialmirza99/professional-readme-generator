@@ -1,4 +1,4 @@
-# Title: My Test Project
+# Title: This is the title of my project
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -15,27 +15,27 @@
 <a name="description"></a>
 ## Description
 
-This section will be the description of my project.
+This is where I will have the description of my project.
 
 <a name="installation"></a>
 ## Installation
 
-This is where I will explain the installation of my project
+This is where I will add any instructions for my project.
 
 <a name="usage"></a>
 ## Usage
 
-This is where I will write my usage manual.
+This is where I will include any usage details for my project.
 
 <a name="contributing"></a>
 ## Contributing
 
-This is my contribution guidline
+This is where I will write my contribution guidlines for my project.
 
 <a name="testing"></a>
 ## Tests
 
-These are my testing instructions.
+This is where I will include my project's testing instructions.
 
 <a name="questions"></a>
 ## Questions
