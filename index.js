@@ -2,7 +2,16 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    'What is the title of your repository/project? ',
+    'Please write a description about your repository/project. ',
+    'Please enter any instructions you may have for installation. ',
+    'Please write a usage manual. ',
+    'Please enter contribution guidelines. ',
+    'Please enter testing instructions. ',
+    'Please enter your github username. ',
+    'Please enter your email address. '
+];
 
 const writeReadme = (response) =>
          
@@ -20,8 +29,6 @@ ${response.installation}
 
 ${response.usage}
 
-## License
-
 ## Contributing
 
 ${response.contributing}
@@ -30,7 +37,11 @@ ${response.contributing}
 
 ${response.testing}
 
-## Questions`;
+## Questions
+
+You can reach me at my [GitHub Profile](https://github.com/${response.github}/).
+
+If you have any additional questions, feel free to email me at ${response.email}`;
         
 
 // TODO: Create a function to write README file
@@ -49,32 +60,42 @@ function init() {
       {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your repository/project?',
+        message: questions[0],
       },
       {
         type: 'input',
         name: 'description',
-        message: 'Please write a description about your repository/project.',
+        message: questions[1],
       },
       {
         type: 'input',
         name: 'installation',
-        message: 'Please enter any instructions you may have for installation.',
+        message: questions[2],
       },
       {
         type: 'input',
         name: 'usage',
-        message: 'Please write a usage manual',
+        message: questions[3],
       },
       {
         type: 'input',
         name: 'contributing',
-        message: 'Please enter contribution guidelines.',
+        message: questions[4],
       },
       {
         type: 'input',
         name: 'testing',
-        message: 'Please enter testing instructions.',
+        message: questions[5],
+      },
+      {
+        type: 'input',
+        name: 'github',
+        message: questions[6],
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: questions[7],
       },
     ])
     .then((response) => {
